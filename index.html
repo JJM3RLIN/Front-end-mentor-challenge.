@@ -13,7 +13,40 @@
 
  <main class="contenedor">
   <div class="contenido">
-    <div class="user">
+      <div class="exercise seccion" id ="paso-1">
+        <div class="user">
+          <div class="user-data">
+            <img src="images/image-jeremy.png" alt="user">
+            <div class="user-info">
+              <p>Report for</p>
+              <h3>Jeremy <span>Robson</span></h3>
+            </div>
+         </div> <!--end of user-data-->
+        <div class="time">
+          <button type="button" data-paso = "1">Daily</button>
+          <button type="button" data-paso="2">Weekly</button>
+          <button type="button" data-paso="3">Monthly</button>
+        </div> <!--end of time-->
+         </div>
+      </div>   <!--Aqui deben ir las tarjetas-->
+      <div class="exercise-weekly seccion" id ="paso-2">
+        <div class="user">
+          <div class="user-data">
+            <img src="images/image-jeremy.png" alt="user">
+            <div class="user-info">
+              <p>Report for</p>
+              <h3>Jeremy <span>Robson</span></h3>
+            </div>
+         </div> <!--end of user-data-->
+        <div class="time">
+          <button type="button" data-paso = "1">Daily</button>
+          <button type="button" data-paso="2" class="activo">Weekly</button>
+          <button type="button" data-paso="3">Monthly</button>
+        </div> <!--end of time-->
+         </div>
+      </div>
+      <div class="exercise-monthly seccion" id ="paso-3">
+         <div class="user">
      <div class="user-data">
        <img src="images/image-jeremy.png" alt="user">
        <div class="user-info">
@@ -24,12 +57,10 @@
    <div class="time">
      <button type="button" data-paso = "1">Daily</button>
      <button type="button" data-paso="2">Weekly</button>
-     <button type="button" data-paso="3">Monthly</button>
+     <button type="button" data-paso="3" class="activo">Monthly</button>
    </div> <!--end of time-->
     </div>
-      <div class="exercise seccion" id ="paso-1"></div>   <!--Aqui deben ir las tarjetas-->
-      <div class="exercise-weekly seccion" id ="paso-2"></div>
-      <div class="exercise-monthly seccion" id ="paso-3"></div> 
+      </div> 
    </div>
  </main>
  <div class="attribution">
