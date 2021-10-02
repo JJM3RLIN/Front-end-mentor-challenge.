@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <main class="contenedor">
+  <div class="contenido">
+    <div class="user">
+     <div class="user-data">
+       <img src="images/image-jeremy.png" alt="user">
+       <div class="user-info">
+         <p>Report for</p>
+         <h3>Jeremy <span>Robson</span></h3>
+       </div>
+    </div> <!--end of user-data-->
+   <div class="time">
+     <button type="button" data-paso = "1">Daily</button>
+     <button type="button" data-paso="2">Weekly</button>
+     <button type="button" data-paso="3">Monthly</button>
+   </div> <!--end of time-->
+    </div>
+      <div class="exercise seccion" id ="paso-1"></div>   <!--Aqui deben ir las tarjetas-->
+      <div class="exercise-weekly seccion" id ="paso-2"></div>
+      <div class="exercise-monthly seccion" id ="paso-3"></div> 
+   </div>
+ </main>
+ <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">M3RLIN</a>.
+</div>
+  <script src="main.js"></script>
+</body>
+</html>

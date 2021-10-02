@@ -1,0 +1,117 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    /*Colores*/
+    --bg: #0c1421;
+    --moradoOscuro: #1d204b;
+    --morado: #5746ea;
+    --pTime:#bfc1f1;
+    --negro: #000;
+    --blanco: #fff;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+/*tener un box sizing natural que no se aumente cuando pongamos paddings*/
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--bg);
+}
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5{
+    color: var(--blanco);
+}
+p{
+    color: var(--pTime);
+    z-index: 10;
+}
+button{
+    color: var(--pTime);
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+button{
+    cursor: pointer;
+}
+.activo{
+    color: var(--blanco);
+}
+.card{
+    background-color: var(--moradoOscuro);
+    border-radius: 20px;
+    padding: 1rem;
+}
+.card:hover{
+    background-color: var(--morado);
+}
+.card p{
+    font-size: 5rem;
+    color: var(--blanco);
+    font-weight: 500;
+    margin: 0;
+}
+.card-text{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin-top: -4rem;
+}
+.card-text h5{
+    margin-top: -1rem;
+    color: var(--pTime);
+}
+.display{
+    padding: 0 1.5rem;
+}
+.exercise{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1.5rem;
+}
+.seccion{
+    display: none;
+}
+
+.mostrar-seccion{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 1.5rem;
+  
+}
+@media (min-width: 1008px){
+    .card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    margin-top: -4rem;
+    }
+    
+    .seccion{
+        display: none;
+    }
+    
+    .mostrar-seccion{
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+ }
+   /*display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-top: -4rem;*/
