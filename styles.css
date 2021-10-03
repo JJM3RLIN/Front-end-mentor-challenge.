@@ -52,10 +52,7 @@ button{
     font-size: 18px;
     cursor: pointer;
 }
-button:hover{
-    color: var(--blanco);
-}
-.activo{
+button:hover, .activo{
     color: var(--blanco);
 }
 .user-data{
@@ -195,7 +192,7 @@ button:hover{
       flex-direction: column;
       align-items: flex-start;
       padding: 2rem;
-      height: 28rem;
+      height: 28.5rem;
     }
     .time button{
         padding: 1rem 0;
