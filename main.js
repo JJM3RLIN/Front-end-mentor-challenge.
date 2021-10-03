@@ -31,15 +31,23 @@ async function mostarInfo(){
 }
 function addElements(padre,horasT, anteriorT, tituloT, last){
     const titulo = document.createElement('H5');
-    const horas = document.createElement('P')
+    const button = document.createElement('BUTTON');
+    const icono = document.createElement('IMG');
+    const horas = document.createElement('P');
     const anterior = document.createElement('H5');
     const contenedorInfo = document.createElement('DIV');
     const contenedorTitulo = document.createElement('DIV');
+    const contenedorCard = document.createElement('DIV');
+    const subBg = document.createElement('DIV');
+    const subBgIcon = document.createElement('IMG');
     const card = document.createElement('DIV');
     titulo.textContent = tituloT;
+    icono.src = "images/icon-ellipsis.svg";
+    button.appendChild(icono)
     horas.textContent =  `${horasT}hrs`;
     anterior.textContent = `${last} - ${anteriorT}hrs`;
     contenedorTitulo.appendChild(titulo);
+    contenedorTitulo.appendChild(button);
     contenedorTitulo.classList.add('display');
      contenedorInfo.appendChild(horas);
      contenedorInfo.classList.add('card-text');
@@ -47,7 +55,39 @@ function addElements(padre,horasT, anteriorT, tituloT, last){
     card.appendChild(contenedorTitulo);
     card.appendChild(contenedorInfo);
     card.classList.add('card');
-    padre.appendChild(card);
+    if(titulo.textContent == 'Work'){ 
+        subBg.classList.add('orange')
+        subBgIcon.src ="images/icon-work.svg"
+        subBg.appendChild(subBgIcon);
+    }
+    else if(titulo.textContent == 'Play'){ 
+        subBg.classList.add('blue')
+        subBgIcon.src ="images/icon-play.svg"
+        subBg.appendChild(subBgIcon);
+    }
+    else if(titulo.textContent == 'Study'){ 
+        subBg.classList.add('red')
+        subBgIcon.src ="images/icon-study.svg"
+        subBg.appendChild(subBgIcon);
+    }
+    else if(titulo.textContent == 'Exercise'){ 
+        subBg.classList.add('green')
+        subBgIcon.src ="images/icon-exercise.svg"
+        subBg.appendChild(subBgIcon);
+    }
+    else if(titulo.textContent == 'Social'){ 
+        subBg.classList.add('violet')
+        subBgIcon.src ="images/icon-social.svg"
+        subBg.appendChild(subBgIcon);
+    }
+    else if(titulo.textContent == 'Self Care'){ 
+        subBg.classList.add('yellow')
+        subBgIcon.src ="images/icon-self-care.svg"
+        subBg.appendChild(subBgIcon);
+    }
+    contenedorCard.appendChild(subBg);
+    contenedorCard.appendChild(card);
+    padre.appendChild(contenedorCard);
 }
 function mostrarSeccion(){
     const seccionActual = document.querySelector(`#paso-${seccion}`);
