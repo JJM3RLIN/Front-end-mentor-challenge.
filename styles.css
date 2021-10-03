@@ -217,7 +217,7 @@ button:hover, .activo{
     }
     .user-data img{
         width: 30%;
-        height: 30%;
+        height: auto;
         border: var(--blanco) 4px solid;
         border-radius: 6.5rem;
 
