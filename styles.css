@@ -109,7 +109,7 @@ button:hover, .activo{
 .card-text h5{
     margin-top: -1rem;
     color: var(--pTime);
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 .display{
@@ -187,6 +187,9 @@ button:hover, .activo{
     padding: 1.5rem;
     margin-top: -4rem;
     }
+    .card-text h5{
+        font-size: 1.8rem;
+    }
     .time{
       display: flex;
       flex-direction: column;
@@ -213,8 +216,8 @@ button:hover, .activo{
         height: 35rem;
     }
     .user-data img{
-        width: 40%;
-        height: 40%;
+        width: 30%;
+        height: 30%;
         border: var(--blanco) 4px solid;
         border-radius: 6.5rem;
 
