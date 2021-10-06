@@ -1,81 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
-   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
- <main class="contenedor centrar">
-  <div class="contenido">
-      <div class="exercise seccion" id ="paso-1">
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="build/css/normalize.min.css" />
+    <link rel="stylesheet" href="build/css/styles.min.css" />
+  </head>
+  <body>
+    <main class="contenedor centrar">
+      <div class="exercise">
         <div class="user">
           <div class="user-data">
-            <img src="images/image-jeremy.png" alt="user">
+            <img src="images/image-jeremy.png" alt="Jeremy Robson" />
             <div class="user-info">
               <div><p>Report for</p></div>
               <div class="name">
                 <h1>Jeremy <span class="span">Robson</span></h1>
               </div>
             </div>
-         </div> <!--end of user-data-->
-        <div class="time">
-          <button type="button" data-paso = "1">Daily</button>
-          <button type="button" data-paso="2">Weekly</button>
-          <button type="button" data-paso="3">Monthly</button>
-        </div> <!--end of time-->
-         </div>
-         <!--Aqui deben ir las tarjetas-->
-      </div>   
-      <div class="exercise-weekly seccion" id ="paso-2">
-        <div class="user">
-          <div class="user-data">
-            <img src="images/image-jeremy.png" alt="user">
-            <div class="user-info">
-              <div><p>Report for</p></div>
-              <div class="name">
-                <h1>Jeremy <span class="span">Robson</span></h1>
-              </div>
+          </div>
+          <!--end of user-data-->
+          <div class="time">
+            <button type="button" data-paso="1">Daily</button>
+            <button type="button" data-paso="2">Weekly</button>
+            <button type="button" data-paso="3">Monthly</button>
+          </div>
+          <!--end of time-->
+        </div>
+        <!--Aqui deben ir las tarjetas-->
+        <div class="work">
+          <div class="orange">
+            <img src="images/icon-work.svg" alt="" aria-hidden="true"/>
+          </div>
+          <div class="card">
+            <div class="display">
+              <h5>Work</h5>
+              <button><img src="images/icon-ellipsis.svg" /></button>
             </div>
-         </div> <!--end of user-data-->
-        <div class="time">
-          <button type="button" data-paso = "1">Daily</button>
-          <button type="button" data-paso="2" class="activo">Weekly</button>
-          <button type="button" data-paso="3">Monthly</button>
-        </div> <!--end of time-->
-         </div>
-         <!--Aqui deben ir las tarjetas-->
+            <div class="card-text">
+              <p class="horas-work"></p>
+              <h5 class="last-work"></h5>
+            </div>
+          </div>
+        </div>
+        <div class="play">
+          <div class="blue">
+            <img src="images/icon-play.svg" alt="" aria-hidden="true"/>
+          </div>
+          <div class="card">
+            <div class="display">
+              <h5>Play</h5>
+              <button><img src="images/icon-ellipsis.svg" /></button>
+            </div>
+            <div class="card-text">
+              <p class="horas-play"></p>
+              <h5 class="last-play"></h5>
+            </div>
+          </div>
+        </div>
+        <div class="Study">
+          <div class="red">
+            <img src="images/icon-study.svg" alt="" aria-hidden="true"/>
+          </div>
+          <div class="card">
+            <div class="display">
+              <h5>Study</h5>
+              <button><img src="images/icon-ellipsis.svg" /></button>
+            </div>
+            <div class="card-text">
+              <p class="horas-study"></p>
+              <h5 class="last-study"></h5>
+            </div>
+          </div>
+        </div>
+        <div class="Exercise">
+          <div class="green">
+            <img src="images/icon-exercise.svg" alt="" aria-hidden="true"/>
+          </div>
+          <div class="card">
+            <div class="display">
+              <h5>Exercise</h5>
+              <button><img src="images/icon-ellipsis.svg" /></button>
+            </div>
+            <div class="card-text">
+              <p class="horas-exercise"></p>
+              <h5 class="last-exercise"></h5>
+            </div>
+          </div>
+        </div>
+        <div class="Social">
+          <div class="violet">
+            <img src="images/icon-social.svg" alt="" aria-hidden="true"/>
+          </div>
+          <div class="card">
+            <div class="display">
+              <h5>Social</h5>
+              <button><img src="images/icon-ellipsis.svg" /></button>
+            </div>
+            <div class="card-text">
+              <p class="horas-social"></p>
+              <h5 class="last-social"></h5>
+            </div>
+          </div>
+        </div>
+        <div class="Self-Care">
+          <div class="yellow">
+            <img src="images/icon-self-care.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="card">
+            <div class="display">
+              <h5>Self Care</h5>
+              <button><img src="images/icon-ellipsis.svg" /></button>
+            </div>
+            <div class="card-text">
+              <p class="horas-self"></p>
+              <h5 class="last-self"></h5>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="exercise-monthly seccion" id ="paso-3">
-        <div class="user">
-          <div class="user-data">
-            <img src="images/image-jeremy.png" alt="user">
-            <div class="user-info">
-              <div><p>Report for</p></div>
-              <div class="name">
-                <h1>Jeremy <span class="span">Robson</span></h1>
-              </div>
-            </div>
-         </div> <!--end of user-data-->
-        <div class="time">
-          <button type="button" data-paso = "1">Daily</button>
-          <button type="button" data-paso="2">Weekly</button>
-          <button type="button" data-paso="3" class="activo">Monthly</button>
-        </div> <!--end of time-->
-         </div>
-         <!--Aqui deben ir las tarjetas-->
-      </div> 
-   </div>
-   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/JJM3RLIN">M3RLIN</a>.
-  </div>
- </main>
-  <script src="main.js"></script>
-</body>
+      <!--End of exercise-->
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/JJM3RLIN">M3RLIN</a>.
+      </div>
+    </main>
+    <script src="/build/js/main.min.js"></script>
+  </body>
 </html>
